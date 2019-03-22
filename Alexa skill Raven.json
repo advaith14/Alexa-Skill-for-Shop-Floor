@@ -1,0 +1,148 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "rave gears",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetCustomer",
+                    "slots": [
+                        {
+                            "name": "OrderNumber",
+                            "type": "AMAZON.FOUR_DIGIT_NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "Give me the client name for the order {OrderNumber}",
+                        "Client name for the order {OrderNumber}",
+                        "Who ordered {OrderNumber}",
+                        "which client ordered {OrderNumber}",
+                        "who's the customer who ordered {OrderNumber} ",
+                        "Which customer ordered {OrderNumber}",
+                        "Who is the client that ordered {OrderNumber}",
+                        "Who is the customer that ordered {OrderNumber}",
+                        "Which customer ordered  {OrderNumber}",
+                        "Who is the customer for {OrderNumber}",
+                        "Who is the customer for order number {OrderNumber}",
+                        "Who is the customer"
+                    ]
+                },
+                {
+                    "name": "GetOrderDueDate",
+                    "slots": [
+                        {
+                            "name": "OrderNumber",
+                            "type": "AMAZON.FOUR_DIGIT_NUMBER"
+                        },
+                        {
+                            "name": "JobNumber",
+                            "type": "AMAZON.FOUR_DIGIT_NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "Give me the due date of the order {JobNumber}",
+                        "Whats the last date of the order {JobNumber}",
+                        "When is {JobNumber}  due",
+                        "When is {JobNumber} to be completed",
+                        "When is {JobNumber} to be done",
+                        "When is the delivery date of {JobNumber}",
+                        "What is the completion date",
+                        "when is the order due",
+                        "when is the job due"
+                    ]
+                },
+                {
+                    "name": "GetPartsInOrder",
+                    "slots": [
+                        {
+                            "name": "OrderNumber",
+                            "type": "AMAZON.FOUR_DIGIT_NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "Get me all the parts being developed in the {OrderNumber}",
+                        "What are the parts being developed in the {OrderNumber}",
+                        "All parts in the {OrderNumber}",
+                        "What are the parts in the order {OrderNumber}",
+                        "The parts in {OrderNumber}",
+                        "Give me all the parts in order {OrderNumber}",
+                        "What are the parts in the order number {OrderNumber}",
+                        "What are the parts in the order",
+                        "what are the parts in the job"
+                    ]
+                },
+                {
+                    "name": "GetPendingOrders",
+                    "slots": [],
+                    "samples": [
+                        "What are the pending orders",
+                        "What are all the pending orders",
+                        "Give me a summary of all pending orders",
+                        "Give me a list of the pending orders",
+                        "What are the jobs that are still to be completed"
+                    ]
+                },
+                {
+                    "name": "JobsDueNextWeek",
+                    "slots": [],
+                    "samples": [
+                        "List all the jobs due next week",
+                        "give me all the jobs due next week",
+                        "what are jobs that are due next week",
+                        "which jobs are due next week",
+                        "What are the jobs that are to be done within the coming week"
+                    ]
+                },
+                {
+                    "name": "JobsEnteredToday",
+                    "slots": [],
+                    "samples": [
+                        "Which jobs were entered today",
+                        "what were the jobs that were entered today ",
+                        "give me all the jobs that entered today ",
+                        "jobs that entered on the day",
+                        "jobs that have been entered today",
+                        "What are the jobs that were entered today",
+                        "Have any jobs been entered today"
+                    ]
+                },
+                {
+                    "name": "JobsOnHold",
+                    "slots": [],
+                    "samples": [
+                        "which jobs are on hold",
+                        "all jobs on hold ",
+                        "jobs put on hold",
+                        "jobs that are on hold",
+                        "give me all the jobs that are on hold",
+                        "List all the jobs that are currently on hold"
+                    ]
+                },
+                {
+                    "name": "Logout",
+                    "slots": [],
+                    "samples": [
+                        "Logout",
+                        "Please Logout",
+                        "Kindly Logout",
+                        "Log out",
+                        "Log out please",
+                        "Logout please"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
